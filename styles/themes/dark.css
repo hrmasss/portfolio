@@ -1,0 +1,19 @@
+/* Import custom font */
+@font-face {
+	font-family: "Epilogue";
+	src: url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+}
+
+:root {
+	/*Theme colors */
+	--base: #000000;
+	--content: #9b9c9c;
+	--base-focus: #0a0a0a;
+	--content-focus: #ffffff;
+	--accent: #d6ffb7;
+	--accent-content: #d940ff;
+
+	/* Typography */
+	--font-size: 16px;
+	--font-family: "Epilogue", Arial, sans-serif;
+}
