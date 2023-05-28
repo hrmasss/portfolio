@@ -51,6 +51,11 @@ main {
 		display: block;
 		width: 36rem;
 	}
+
+	.intro {
+		display: flex;
+		gap: 3rem;
+	}
 }
 
 .avatar img {
