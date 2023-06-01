@@ -15,12 +15,6 @@ body {
 	gap: 2rem;
 }
 
-@media (max-width: 1200px) {
-	.social-bar {
-		gap: 1.5rem;
-	}
-}
-
 .social-icon {
 	width: 1.2rem;
 	opacity: 0.4;
@@ -34,28 +28,10 @@ main {
 	margin: 4rem 11rem 0;
 }
 
-@media (max-width: 1200px) {
-	main {
-		margin: 0 2rem;
-	}
-}
-
 .bio {
 	all: unset;
 	line-height: 28px;
 	font-size: var(--font-size);
-}
-
-@media (min-width: 1200px) {
-	.bio {
-		display: block;
-		width: 36rem;
-	}
-
-	.intro {
-		display: flex;
-		gap: 3rem;
-	}
 }
 
 .avatar img {
@@ -64,21 +40,8 @@ main {
 	border-radius: 30%;
 }
 
-@media (max-width: 1200px) {
-	.avatar {
-		display: flex;
-		justify-content: center;
-	}
-}
-
 .header-item {
 	margin-bottom: 1rem;
-}
-
-@media (max-width: 1200px) {
-	.header-item {
-		text-align: justify;
-	}
 }
 
 .text-focus {
@@ -140,6 +103,38 @@ a.contact-me {
 
 .thumbnail:hover {
 	opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+	.social-bar {
+		gap: 1.5rem;
+	}
+
+	main {
+		margin: 0 2rem;
+	}
+
+	.avatar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-item {
+		text-align: justify;
+	}
+}
+
+@media (min-width: 1200px) {
+	.bio {
+		display: block;
+		width: 36rem;
+	}
+
+	.intro {
+		display: flex;
+		gap: 3rem;
+	}
 }
 
 .footer {
