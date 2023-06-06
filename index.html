@@ -81,10 +81,10 @@
 			</div>
 
 			<div class="navigation">
-				<a href="#" class="nav-link" onclick="toggle(this.innerText)"
+				<a href="#projects" class="nav-link text-focus" onclick="toggle(this)"
 					>Projects</a
 				>
-				<a href="#" class="nav-link" onclick="toggle(this.innerText)">Stack</a>
+				<a href="#stack" class="nav-link" onclick="toggle(this)">Stack</a>
 			</div>
 
 			<div id="projects">
@@ -225,13 +225,23 @@
 <script>
 	function toggle(item) {
 		let links = ["projects", "stack"];
-
+		//Hide all sections
 		links.forEach((link) => {
 			let section = document.getElementById(link);
 			section.style.display = "none";
 		});
 
-		let section = document.getElementById(item.toLowerCase());
+		//Show clicked section
+		let section = document.getElementById(item.innerText.toLowerCase());
 		section.style.display = "block";
+
+		//Unfocus all nav links
+		let navLinks = document.querySelectorAll(".nav-link");
+		navLinks.forEach((link) => {
+			link.classList.remove("text-focus");
+		});
+
+		//Focus clicked nav link
+		item.classList.add("text-focus");
 	}
 </script>
