@@ -82,14 +82,21 @@ a.contact-me {
 	color: var(--content-focus);
 }
 
-#projects {
+.grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	padding: 2rem 0;
 	gap: 3.5rem;
 }
 
-.project-item {
+#stack .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 2rem 0;
+	gap: 3.5rem;
+}
+
+.card-item {
 	margin: 1rem 0;
 }
 
@@ -142,4 +149,8 @@ a.contact-me {
 	text-align: center;
 	padding: 1rem 0;
 	border-top: 1px solid #252525;
+}
+
+#stack {
+	display: none;
 }

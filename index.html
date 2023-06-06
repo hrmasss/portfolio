@@ -81,70 +81,157 @@
 			</div>
 
 			<div class="navigation">
-				<a href="#projects" class="nav-link">Projects</a>
-				<a href="#resume" class="nav-link">Resume</a>
+				<a href="#" class="nav-link" onclick="toggle(this.innerText)"
+					>Projects</a
+				>
+				<a href="#" class="nav-link" onclick="toggle(this.innerText)">Stack</a>
 			</div>
 
 			<div id="projects">
-				<div class="project-card">
-					<a href="https://github.com/hrmasss/insta-clone" target="_blank"
-						><img
-							src="assets/projects/insta-clone.png"
-							alt=""
-							class="thumbnail"
-					/></a>
-					<div class="text-focus project-item">InstaClone</div>
-					<div class="project-item">
-						Just like Insta but on a budget: InstaClone - frame, share, connect.
-						Powered by the Laravel framework.
+				<div class="grid">
+					<div class="card">
+						<a href="https://github.com/hrmasss/insta-clone" target="_blank"
+							><img src="assets/projects/insta-clone.png" class="thumbnail"
+						/></a>
+						<div class="text-focus card-item">InstaClone</div>
+						<div class="card-item">
+							Just like Insta but on a budget: InstaClone - frame, share,
+							connect. Powered by the Laravel framework.
+						</div>
+						<a
+							class="url text-focus"
+							href="https://github.com/hrmasss/insta-clone"
+							target="_blank"
+							>github.com <span class="arrow"> → </span></a
+						>
 					</div>
-					<a
-						class="url text-focus"
-						href="https://github.com/hrmasss/insta-clone"
-						target="_blank"
-						>github.com <span class="arrow"> → </span></a
-					>
-				</div>
-				<div class="project-card">
-					<a
-						href="https://dribbble.com/shots/21525284-GraveFinder-Mobile-App"
-						target="_blank"
-						><img
-							src="assets/projects/gravefinder.png"
-							alt=""
-							class="thumbnail"
-					/></a>
-					<div class="text-focus project-item">GraveFinder</div>
-					<div class="project-item">
-						Introducing an innovative concept app designed to enhance the
-						process of locating graves in graveyards.
+					<div class="card">
+						<a
+							href="https://dribbble.com/shots/21525284-GraveFinder-Mobile-App"
+							target="_blank"
+							><img src="assets/projects/gravefinder.png" class="thumbnail"
+						/></a>
+						<div class="text-focus card-item">GraveFinder</div>
+						<div class="card-item">
+							Introducing an innovative concept app designed to enhance the
+							process of locating graves in graveyards.
+						</div>
+						<a
+							class="url text-focus"
+							href="https://dribbble.com/shots/21525284-GraveFinder-Mobile-App"
+							target="_blank"
+							>dribbble.com <span class="arrow"> → </span></a
+						>
 					</div>
-					<a
-						class="url text-focus"
-						href="https://dribbble.com/shots/21525284-GraveFinder-Mobile-App"
-						target="_blank"
-						>dribbble.com <span class="arrow"> → </span></a
-					>
-				</div>
-				<div class="project-card">
-					<a href="https://github.com/hrmasss/spammed" target="_blank"
-						><img src="assets/projects/spammed.png" alt="" class="thumbnail"
-					/></a>
-					<div class="text-focus project-item">Spammed</div>
-					<div class="project-item">
-						Dare to dive into the spam abyss: Spammed - A Node.js app to spam
-						you ethically!
+					<div class="card">
+						<a href="https://github.com/hrmasss/spammed" target="_blank"
+							><img src="assets/projects/spammed.png" class="thumbnail"
+						/></a>
+						<div class="text-focus card-item">Spammed</div>
+						<div class="card-item">
+							Dare to dive into the spam abyss: Spammed - A Node.js newsletter
+							app to spam you ethically!
+						</div>
+						<a
+							class="url text-focus"
+							href="https://github.com/hrmasss/spammed"
+							target="_blank"
+							>github.com <span class="arrow"> → </span></a
+						>
 					</div>
-					<a
-						class="url text-focus"
-						href="https://github.com/hrmasss/spammed"
-						target="_blank"
-						>github.com <span class="arrow"> → </span></a
-					>
 				</div>
 			</div>
 
+			<div id="stack">
+				<div class="grid">
+					<div class="card">
+						<a href="https://nextjs.org" target="_blank"
+							><img src="assets/stack/javascript.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://nodejs.org" target="_blank"
+							><img src="assets/stack/node.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://reactjs.org" target="_blank"
+							><img src="assets/stack/react.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://nextjs.org" target="_blank"
+							><img src="assets/stack/next.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.typescriptlang.org" target="_blank"
+							><img src="assets/stack/typescript.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://tailwindcss.com" target="_blank"
+							><img src="assets/stack/tailwind.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://laravel.com" target="_blank"
+							><img src="assets/stack/laravel.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.mongodb.com" target="_blank"
+							><img src="assets/stack/mongodb.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.mysql.com" target="_blank"
+							><img src="assets/stack/mysql.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.python.org" target="_blank"
+							><img src="assets/stack/python.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.php.net" target="_blank"
+							><img src="assets/stack/php.png" class="thumbnail"
+						/></a>
+					</div>
+
+					<div class="card">
+						<a href="https://www.java.com" target="_blank"
+							><img src="assets/stack/java.png" class="thumbnail"
+						/></a>
+					</div>
+				</div>
+			</div>
 			<div class="footer">Hojayfa © 2023</div>
 		</main>
 	</body>
 </html>
+
+<script>
+	function toggle(item) {
+		let links = ["projects", "stack"];
+
+		links.forEach((link) => {
+			let section = document.getElementById(link);
+			section.style.display = "none";
+		});
+
+		let section = document.getElementById(item.toLowerCase());
+		section.style.display = "block";
+	}
+</script>
